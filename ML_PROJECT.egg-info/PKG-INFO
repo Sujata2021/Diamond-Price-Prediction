@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: ML-PROJECT
+Version: 0.0.1
+Author: Sujata
+Author-email: datasciencelearning64@gmail.com
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
