@@ -1,0 +1,10 @@
+{   
+    "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.fixAll": [
+        "source.convertImportFormat"
+    ],
+    "python.createEnvironment.contentButton": "hide"
+}

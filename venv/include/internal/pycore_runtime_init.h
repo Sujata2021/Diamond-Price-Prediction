@@ -119,7 +119,6 @@ extern PyTypeObject _PyExc_MemoryError;
                 }, \
                 .last_resort_memory_error = { \
                     _PyObject_HEAD_INIT(&_PyExc_MemoryError) \
-                    .args = (PyObject*)&_Py_SINGLETON(tuple_empty) \
                 }, \
             }, \
         }, \
@@ -165,7 +164,6 @@ extern PyTypeObject _PyExc_MemoryError;
             .kind = 1, \
             .compact = 1, \
             .ascii = (ASCII), \
-            .statically_allocated = 1, \
         }, \
     }
 #define _PyASCIIObject_INIT(LITERAL) \

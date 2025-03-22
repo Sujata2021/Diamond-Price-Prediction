@@ -16,6 +16,7 @@ class AsyncIOInteractiveConsole(code.InteractiveConsole):
     def __init__(self, locals, loop):
         super().__init__(locals)
         self.compile.compiler.flags |= ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
+
         self.loop = loop
 
     def runcode(self, code):
@@ -89,8 +90,6 @@ class REPLThread(threading.Thread):
 
 
 if __name__ == '__main__':
-    sys.audit("cpython.run_stdin")
-
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
 
