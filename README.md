@@ -43,4 +43,4 @@ Label encoding of categorical features (cut, color, clarity)
 
 Feature scaling using StandardScaler
 
-Train-test split (typically 80/20 or 70/30)
+Train-test split (typically 80/20)
